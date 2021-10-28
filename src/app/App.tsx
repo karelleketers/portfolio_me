@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-      <div className="font-serif text-gold">
+      <div className="font-reg text-light relative max-w-120 m-auto">
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />

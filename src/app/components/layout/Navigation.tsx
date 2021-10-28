@@ -15,7 +15,7 @@ export const Navigation = () => (
                 <li>Connect</li>
             </Link>
 </ul> */}
-        <button className="text-smallest font-josb font-bold tracking-widest leading-4 text-light">
+        <button className="text-smallest font-mendbold font-bold tracking-widest leading-4">
             <ul>
                 <li>CALL</li>
                 <li>ELEV</li>

@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 @import url('./assets/fonts/stylesheet.css');
+
+body {
+    background: #E4E4E4
+}

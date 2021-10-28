@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 } */
 
 export const Header = () => (
-	<header className="flex flex-wrap w-full justify-between items-center border bg-transparent fixed border-pink-200">
+	<header className="invisible p-4 border-box flex flex-wrap w-screen justify-between fixed z-10 items-center bg-light bg-opacity-0 backdrop-blur-md">
         <Link to="/">
-            <img src={logo} className="w-6 m-4" alt="logo" />
+            <img src={logo} className="w-6" alt="logo" />
         </Link>
         <Navigation />
     </header>
