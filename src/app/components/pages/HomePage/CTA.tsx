@@ -1,23 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCTA } from "./../../hooks/UseCTA";
 
-export const CTA = () => (
-	<section className="">
-		<section className="px-4 flex flex-wrap items-center">
-			<h2 className="m-auto py-4 text-titlesmall sm:text-xl flex flex-col font-bold"><span className="text-gold">This is not the end,</span><span className="text-gold">it's only the <span className="text-light">beginning</span></span></h2>
-			<p className="w-full py-4 font-mendlight sm:text-par sm:leading-8"> feel free to keep exploring, but if you’re already convinced then don’t hesitate to reach out to me. I’m sure I’d love to hear from you. </p>
+export const CTA = () => {
+
+	useCTA(".ctaspantop", ".ctaspanbottom", ".rest", ".topcont", ".bottomcont");
+
+	return (<section className="m-auto flex flex-wrap xl:justify-between xl:items-center h-full xl:max-w-textendxl">
+		<section className="w-full xl:w-85 xl:mb-12">
+			<section className="px-6 md:px-9 lg:px-12 xli:px-0 flex flex-wrap items-center xli:max-w-textheromd">
+				<h2 className="m-auto py-6 md:py-9 xli:py-12  leading-tight text-titlesmall sm:text-xl md:text-title547 xl:text-title1024 flex flex-col font-bold">
+					<div className="topcont overflow-hidden pb-2"><p className="ctaspantop text-gold">This is not the end,</p></div>
+					<div className="bottomcont overflow-hidden pb-5"><p className="ctaspanbottom text-gold">it's only the <span className="text-light">beginning</span></p></div>
+				</h2>
+				<p className="rest w-full pb-6 md:pb-9 xli:pb-12 md:pt-2 xli:pt-5 font-mendlight leading-normal sm:text-xl md:text-small lg:text-2xl"> feel free to keep exploring, but if you’re already convinced then don’t hesitate to reach out to me. I’m sure I’d love to hear from you. </p>
+			</section>
+			<section className="rest">
+				<div className="font-josefine my-6 md:my-9 lg:my-12 mx-auto flex flex-wrap justify-between px-6 w-full box-border max-w-button-cont">
+					<Link to={"/projects"} className="w-12/25 xs:w-2/5 max-w-button">
+						<button className="shadow-lg text-center leading-none text-base sm:text-xl w-full rounded-full border border-gold py-4 hover:border-light hover:text-gold duration-200">PROJECTS</button>
+					</Link>
+					<Link to={"/connect"} className="w-12/25 xs:w-2/5 max-w-button">
+						<button className="shadow-lg text-center leading-none text-base sm:text-xl w-full rounded-full bg-gold hover:bg-light hover:text-gold duration-200 py-4">CONNECT</button>
+					</Link>
+				</div>
+			</section>
 		</section>
-		<section>
-			<div className="mt-4 mx-auto flex flex-wrap justify-between px-4 w-full box-border max-w-button-cont">
-				<Link to={"/projects"} className="w-12/25 xs:w-2/5 max-w-button">
-					<button className="text-center font-josefine text-med sm:text-intermezzo420sm w-full rounded-full border border-gold py-2">PROJECTS</button>
-				</Link>
-				<Link to={"/connect"} className="w-12/25 xs:w-2/5 max-w-button">
-					<button className="text-center font-josefine text-med sm:text-intermezzo420sm w-full rounded-full bg-gold py-2">CONNECT</button>
-				</Link>
-			</div>
-			<div className="flex flex-wrap py-7 px-4 justify-between max-w-socials mx-auto">
-				<a href="https://www.linkedin.com/in/karelle-keters-b576331b6/" className="">
+		<section className="rest w-full xl:w-1/10">
+			<div className="flex flex-wrap py-16 px-6 xl:px-0 justify-between max-w-socials mx-auto xl:items-stretch">
+				<a href="https://www.linkedin.com/in/karelle-keters-b576331b6/"  target="_blank" rel="noopener noreferrer" className="xl:w-full xl:my-12">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" className="duration-200 text-gold fill-current hover:fill-light">
 						<defs>
 							<clipPath id="a">
@@ -31,7 +42,7 @@ export const CTA = () => (
 						</g>
 					</svg>
 				</a>
-				<a href="https://github.com/karelleketers"className="group">
+				<a href="https://github.com/karelleketers" target="_blank" rel="noopener noreferrer" className="xl:w-full xl:my-12">
 					<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40.048" height="40.048" viewBox="0 0 40.048 40.048" className="duration-200 text-gold fill-current hover:fill-light">
 						<g id="Layer_1" data-name="Layer 1">
 							<path id="Path_290" data-name="Path 290" d="M7.926,40.048h24.2a7.936,7.936,0,0,0,7.926-7.926V7.926A7.936,7.936,0,0,0,32.122,0H7.926A7.936,7.936,0,0,0,0,7.926v24.2a7.936,7.936,0,0,0,7.926,7.926ZM2.5,7.926A5.429,5.429,0,0,1,7.926,2.5h24.2a5.429,5.429,0,0,1,5.423,5.423v24.2a5.429,5.429,0,0,1-5.423,5.423H7.926A5.429,5.429,0,0,1,2.5,32.122Z" />
@@ -40,7 +51,7 @@ export const CTA = () => (
 						</g>
 					</svg>
 				</a>
-				<a href="https://github.com/karelleketers" className="">
+				<a href="https://github.com/karelleketers"  target="_blank" rel="noopener noreferrer" className="xl:w-full xl:my-12">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="40" height="39" viewBox="0 0 40 39" className="duration-200 text-gold fill-current hover:fill-light">
 						<defs>
 							<clipPath id="clip-path">
@@ -58,5 +69,5 @@ export const CTA = () => (
 				</a>
 			</div>
 		</section>
-	</section>
-)
+	</section>)
+}

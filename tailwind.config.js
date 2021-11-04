@@ -13,118 +13,68 @@ module.exports = {
       'xli': '1366px',
       '2xl': '1680px',
     },
-    spacing: {
-      '1': '0.5rem',
-      '2': '1rem',
-      '3': '1.25rem',
-      '4': '1.5rem',
-      '5': '2.25rem',
-      '6': '3rem',
-      '7': '4rem',
-      '8': '4.5rem;',
-      '20': '20.5rem',
-      '75': '75rem',
-      '103': '6.4375rem',
-      '123': '7.6875rem',
-      'nav': '8.625rem',
-      'hero': '39.5rem',
-      'blob_1_w': '107rem',
-      'blob_1_h': '45.8rem',
-      'blob_2_h': '24rem',
-      'bcard_h': '30rem',
-      'bcardlg': '40rem',
-      'bcardxl': '50rem',
-      'bcard2xl': '60rem',
-      'intfull': '41.8rem',
-      '12/25': '48%',
-    },
-    textColor: {
-      'dark': '#1E252E',
-      'gold': '#B66C3B',
-      'light': '#E4E4E4',
-    },
-    inset: {
-      '0': '0',
-      '1': '1rem',
-      '6': '3rem',
-      '8': '-4rem',
-      '1/5': '20%',
-      '11': '-11rem',
-      '13': '-13rem',
-      '1/3': '30%',
-      '35': '35%',
-      '2/5': '40%',
-      '1/2': '50%',
-    },
     fontSize: {
       'smallest': '.5rem',
-      'elev_med': ['0.75rem', {
-        lineHeight: '1.5rem'
-      }],
-      'smaller': ['.813rem', {
-        lineHeight: '0.813rem'
-      }],
-      'small': ['1.375rem', {
-        lineHeight: '1.719rem'
-      }],
-      'med': ['1rem', {
-        lineHeight: '1rem'
-      }],
-      'par': ['1.25rem', {
-        lineHeight: '1.375rem'
-      }],
-      'base': ['1.5rem', {
-        lineHeight: '3rem'
-      }],
-      'xl': ['4.5rem', {
-        lineHeight: '5.25rem'
-      }],
-      'blobmed': ['2rem', {
-        lineHeight: '2.375rem'
-      }],
-      'blobplus': ['2.25rem', {
-        lineHeight: '2.7rem'
-      }],
-      'titlesmall': ['2.875rem', {
-        lineHeight: '3.063rem'
-      }],
-      'titlemed': ['6.375rem', {
-        lineHeight: '6.375rem'
-      }],
-      'textmed': ['1.75rem', {
-        lineHeight: '3.125rem'
-      }],
-      'intermezzolg': '2rem',
-      'intermezzosm': ['0.875rem', {
-        lineHeight: '1.125rem'
-      }],
+      'xs': '0.75rem',
+      'smaller': '.813rem',
+      'sm': '0.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      'small': '1.375rem',
+      '2xl': '1.5rem',
+      'blobsm': '1.75rem',
+      'blobmed': '2rem',
+      '4xl': '2.25rem',
+      '7xl': '4.5rem',
+      '8xl': '6rem',
+      'titlesmall': '2.85rem',
+      'title547': '5.6rem',
+      'title1024': '7.6rem',
       'intermezzo360lg': '2.375rem',
-      'intermezzo360sm': ['1.125rem', {
-        lineHeight: '1.25rem'
-      }],
       'intermezzo420lg': '2.7rem',
-      'intermezzo420sm': ['1.25rem', {
-        lineHeight: '1.375rem'
-      }],
       'intermezzo547lg': '3.5rem',
-      'intermezzo547sm': ['1.5rem', {
-        lineHeight: '1.375rem'
-      }],
       'intermezzo768lg': '4rem',
-      'intermezzo768sm': ['1.75rem', {
-        lineHeight: '1.75rem'
-      }],
-
+      'intermezzo1024lg': '5rem',
+      'intermezzo1680lg': '7rem',
+      'intermezzo1680sm': '2.5rem',
     },
     letterSpacing: {
       widest: '.3rem',
     },
     extend: {
+      spacing: {
+      'nav': '8.625rem',
+      'dev-bottom-sm': '0.6rem',
+      'dev-bottom-md': '0.9rem',
+      'dev-bottom-lg': '1.1rem',
+      'dev-bottom-xl': '1.6rem',
+      'dev-top-sm': '0.34rem',
+      'forms-top-sm': '6.125rem',
+      },
+      inset: {
+        '1/5': '20%',
+        '35': '35%',
+        '2/5': '40%',
+        '3/5': '60%',
+        'placeholder': '0.4rem',
+        'up': '-9.375rem',
+        'down': '9.375rem',
+        'heroright': '60vh',
+        'heroleft': '-50vh',
+        'herodown': '10vh',
+      },
       fill: {
         'light': '#E4E4E4'
       },
       zIndex: {
       '-10': '-10',
+      },
+      textColor: {
+        'dark': '#1E252E',
+        'gold': '#B66C3B',
+        'light': '#E4E4E4',
+        'error': '#EF4444',
       },
       colors: {
         transparent: 'transparent',
@@ -134,40 +84,85 @@ module.exports = {
         'light': '#E4E4E4',
       },
       fontFamily: {
-        'reg': ['prep', 'serif'],
+        'reg': ['prep', 'playfair', 'serif'],
         'thin': ['prepthin', 'serif'],
         'light': ['preplight', 'serif'],
-        'bold': ['prepbold', 'serif'],
+        'bold': ['prepbold', 'playfairbold', 'serif'],
         sans: ['josefin', 'sans-serif'],
         'josb': ['josefinbold', 'sans-serif'],
         'josefine': ['josefine', 'sans-serif'],
         'josethin': ['josethin'],
-        'mendlight': ['mendlight'],
-        'mendbol': ['mendlight'],
+        'mendlight': ['mendlight', 'josefine'],
+        'mendbol': ['mendbol'],
+        'mendreg': ['mendreg, josefin'],
     },
     width: {
-      'card': '6.125rem',
       'logo': '4.5rem',
+      'formsxl': '45vw',
       '69': '68.75rem',
+      'blob_1_sm': '71.5rem',
+      '90': '90rem',
       '95': '95rem',
       '110': '110rem',
-      '120': '120rem',
       '130': '130rem',
+      '1/10': '10%',
+      '12/25': '48%',
+      '55': '55%',
+      '3/5': '60%',
+      '85': '87%',
+      'over': '110vw',
+      'detailhor': 'calc(500%/3)',
+      'complete': '100vw',
+      'detw': 'calc(100vw/3)',
+      '80': '80vw',
+      'ten': '10vw',
+    },
+    height: {
+      '90': '90rem',
+      '120': '120vh',
+      '160': '160vh',
+      'blob_1_lg': '45.8rem',
+      'blob_1_sm': '40.4375rem',
+      'bcard_sm': '30rem',
+      'bcard_lg': '40rem',
+      'bcard_xl': '50rem',
+      'bcard_2xl': '60rem',
     },
     maxWidth: {
       'button': '10.8rem',
       'button-cont': '32rem',
       'socials': '37.5rem',
-      'card': '6.125rem'
+      '120': '120rem',
+      'textherosm': '55rem',
+      'textheromd': '56.25rem',
+      'textendxl': '63.5rem',
+      'formsxl': '40vw',
     },
     gridTemplateRows: {
       '8': 'repeat(8, minmax(0, 1fr))',
       '12': 'repeat(12, minmax(0, 1fr))'
     },
+    lineHeight: {
+      'title': '0.85',
+    },
+    translate: {
+      'half': '-50%',
+    },
+    backgroundImage: {
+      'connect': "url('./assets/img/connect.png')",
+      '0': "url('./assets/img/online-warriors.jpeg')",
+      '1': "url('./assets/img/gentsefeesten.jpg')",
+      '2': "url('./assets/img/codegram.jpg')",
+      '3': "url('./assets/img/osoc.png')",
+      '4': "url('./assets/img/aq.png')",
+
+    }
   }},
   variants: {
     fill: ['hover'],
-    extend: {},
+    extend: {
+      appearance: ['focus'],
+    },
   },
   plugins: [],
 }

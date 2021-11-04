@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 } */
 
 export const Header = () => (
-	<header className="invisible p-4 border-box flex flex-wrap w-screen justify-between fixed z-10 items-center bg-light bg-opacity-0 backdrop-blur-md">
+	<header className="invisible p-6 border-box flex flex-wrap w-screen justify-between fixed z-10 items-center bg-light bg-opacity-0 backdrop-blur-md">
         <Link to="/">
             <img src={logo} className="w-6" alt="logo" />
         </Link>
