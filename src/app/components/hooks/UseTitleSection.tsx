@@ -25,13 +25,6 @@ export const useTitleSection = (title: string, text: string, trigger: string) =>
                 ease: "circ",
                 overwrite: true,
             })},
-            onEnterBack: () => {gsap.to(title, {
-                y: "50vh", 
-                delay: 1,
-                duration: 1,
-                ease: "circ",
-                overwrite: true,
-            })},
         })
         
         ScrollTrigger.create({
@@ -45,13 +38,6 @@ export const useTitleSection = (title: string, text: string, trigger: string) =>
                 ease: "circ",
                 autoAlpha: 1,
                 overwrite: true,
-            })},
-            onEnterBack: () => {gsap.to(text, {
-                y: "50vh", 
-                duration: 1,
-                ease: "circ",
-                autoAlpha: 0,
-                overwrite: true
             })},
         })
 

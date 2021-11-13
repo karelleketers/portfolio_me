@@ -42,7 +42,7 @@ export const CTA = () => {
 						</g>
 					</svg>
 				</a>
-				<a href="https://github.com/karelleketers" target="_blank" rel="noopener noreferrer" className="xl:w-full xl:my-12">
+				<a href="https://www.instagram.com/simply___ella/" target="_blank" rel="noopener noreferrer" className="xl:w-full xl:my-12">
 					<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40.048" height="40.048" viewBox="0 0 40.048 40.048" className="duration-200 text-gold fill-current hover:fill-light">
 						<g id="Layer_1" data-name="Layer 1">
 							<path id="Path_290" data-name="Path 290" d="M7.926,40.048h24.2a7.936,7.936,0,0,0,7.926-7.926V7.926A7.936,7.936,0,0,0,32.122,0H7.926A7.936,7.936,0,0,0,0,7.926v24.2a7.936,7.936,0,0,0,7.926,7.926ZM2.5,7.926A5.429,5.429,0,0,1,7.926,2.5h24.2a5.429,5.429,0,0,1,5.423,5.423v24.2a5.429,5.429,0,0,1-5.423,5.423H7.926A5.429,5.429,0,0,1,2.5,32.122Z" />

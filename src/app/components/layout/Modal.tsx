@@ -1,7 +1,7 @@
 import React from 'react';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
-import lift from './../../../assets/figures/lift-23.svg';
+import lift from './../../../assets/figures/lift.svg';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,7 +37,7 @@ export const Modal = () => {
 
     return (
         <div className="overscroll-none hidden transition-all bg-opacity-90 nav-modal z-200 w-screen h-screen bg-dark top-0 left-0 p-6 fixed">
-            <div className="relative w-full h-full flex flex-wrap">
+            <div className="m-auto max-w-120 relative w-full h-full flex flex-wrap">
                 <div className="relative z-300 h-liftsm xl:h-auto w-full flex flex-wrap justify-end items-start flex-0">  
                     <button onClick={handleOnClick} className="text-shadow text-smallest font-mendbold tracking-widest leading-4">
                         <ul className="">

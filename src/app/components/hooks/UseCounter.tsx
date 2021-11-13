@@ -33,7 +33,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "one");
 		tl.to(obj3, {
 			text: {
-				value: "1",
+				value: "100",
 				type: "diff",
 			},
 		}, "one");
@@ -53,7 +53,13 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				padSpace: true,
 			},
 		}, "two");
-		
+		tl.to(obj3, {
+			text: {
+				value: "150",
+				type: "diff",
+			},
+		}, "two");
+
 		tl.add("three");
 		
 		tl.to(obj1, {
@@ -71,7 +77,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "three");
 		tl.to(obj3, {
 			text: {
-				value: "2",
+				value: "200",
 				type: "diff",
 			},
 		}, "three");
@@ -89,6 +95,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				value: "4",
 				type: "diff",
 				padSpace: true,
+			},
+		}, "four");
+		tl.to(obj3, {
+			text: {
+				value: "250",
+				type: "diff",
 			},
 		}, "four");
 		
@@ -109,7 +121,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "five");
 		tl.to(obj3, {
 			text: {
-				value: "3",
+				value: "300",
 				type: "diff",
 			},
 		}, "five");
@@ -127,6 +139,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				value: "6",
 				type: "diff",
 				padSpace: true,
+			},
+		}, "six");
+		tl.to(obj3, {
+			text: {
+				value: "350",
+				type: "diff",
 			},
 		}, "six");
 		
@@ -148,7 +166,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "seven");
 		tl.to(obj3, {
 			text: {
-				value: "4",
+				value: "400",
 				type: "diff",
 			},
 		}, "seven");
@@ -168,6 +186,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				type: "diff",
 				padSpace: true,
 			}	
+		}, "eight");
+		tl.to(obj3, {
+			text: {
+				value: "450",
+				type: "diff",
+			},
 		}, "eight");	
 		
 		tl.add("nine");
@@ -188,7 +212,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "nine");	
 			tl.to(obj3, {
 			text: {
-				value: "5",
+				value: "500",
 				type: "diff",
 			},
 		}, "nine");
@@ -208,6 +232,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				type: "diff",
 				padSpace: true,
 			}	
+		}, "ten");
+		tl.to(obj3, {
+			text: {
+				value: "600",
+				type: "diff",
+			},
 		}, "ten");	
 		
 		tl.add("eleven");
@@ -228,7 +258,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "eleven");	
 			tl.to(obj3, {
 			text: {
-				value: "6",
+				value: "700",
 				type: "diff",
 			},
 		}, "eleven");
@@ -268,7 +298,7 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		}, "thirteen");	
 			tl.to(obj3, {
 			text: {
-				value: "7",
+				value: "800",
 				type: "diff",
 			},
 		}, "thirteen");
@@ -280,6 +310,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 				value: "1.4",
 				type: "diff",
 			},
+		}, "fourteen");
+		tl.to(obj3, {
+			text: {
+				value: "900",
+				type: "diff",
+			},
 		}, "fourteen");	
 
 		tl.add("fifteen");
@@ -287,6 +323,12 @@ export const useCounter = (obj1: string, obj2: string, obj3: string, trigger: st
 		tl.to(obj1, {
 			text: {
 				value: "1.5",
+				type: "diff",
+			},
+		}, "fifteen");
+		tl.to(obj3, {
+			text: {
+				value: "1k+",
 				type: "diff",
 			},
 		}, "fifteen");

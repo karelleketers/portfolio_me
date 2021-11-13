@@ -43,7 +43,7 @@ export const Header = () => {
     }
 
 	return (
-    <header className="nav p-6 border-box flex flex-wrap w-screen justify-between fixed z-100 items-center bg-light bg-opacity-0">
+    <header className="nav p-6 border-box flex flex-wrap w-screen max-w-120 justify-between fixed z-100 items-center bg-light bg-opacity-0">
         <Link to="/">
             <img src={logo} className="w-12" alt="logo" />
         </Link>

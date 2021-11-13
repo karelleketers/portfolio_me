@@ -33,11 +33,6 @@ export const Projects = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const sliderRef = useRef(null);
-
-	useLayoutEffect(() => {
-		// eslint-disable-next-line no-restricted-globals
-		/* screen.orientation.onchange = () => {window.location.reload()}; */
-	}, []);
 	
 	useEffect(() => {
 		let draggable = new Draggable(sliderRef.current, { // use a proxy element in order to swipe instead of scroll
@@ -407,7 +402,7 @@ export const Projects = () => {
 				<DetailButton to="/project/arne-quinze" onClick={() => CallBackActivate(4)} bg="bg-4 bg-center" cs="cont-5 middle-ends flex">
 					<span className="text-light table clicked text-micro opacity-0 invisible transition-all leading-vloose">December 2020</span><span className="table leading-snuggish text-2xl xli:text-blobsm">Arne</span><span className="table leading-snuggish text-2xl xli:text-blobsm">Quinze</span>
 				</DetailButton>
-				<DetailButton to="/project/online-warrior" onClick={() => CallBackActivate(5)} bg="bg-0 bg-center" cs="cont-6 ends middle-ends hidden lg:flex">
+				<DetailButton to="/project/online-warriors" onClick={() => CallBackActivate(5)} bg="bg-0 bg-center" cs="cont-6 ends middle-ends hidden lg:flex">
 					<span className="text-light table clicked text-micro opacity-0 invisible transition-all leading-vloose">April 2021</span><span className="table leading-snuggish text-2xl xli:text-blobsm">Online</span><span className="table leading-snuggish text-2xl xli:text-blobsm">Warriors</span>
 				</DetailButton>
 				<DetailButton to="/project/arne-quinze" onClick={() => CallBackActivate(6)} bg="bg-1 bg-left-4 lg:bg-lefter xli:bg-left-4" cs="cont-7 ends middle-ends hidden xl:flex">

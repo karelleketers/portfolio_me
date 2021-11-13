@@ -3,7 +3,7 @@ import blob from './../../../../assets/figures/blob-3.svg';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { Link, useParams } from 'react-router-dom';
-import { useCTA, useHeroBlob } from '../../hooks';
+import { useCTA } from '../../hooks';
 import data from './../../../../data/projects.json'
 import { Header } from './../../layout'
 
@@ -11,25 +11,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const Project = () => {
     const { id }: {id: string} = useParams();
-
     const project = data[id as keyof typeof data]
-    console.log(project)
-
     useEffect(() => {
         ScrollTrigger.matchMedia({
             "(min-width: 1024px)": () => {
                 let tl = gsap.timeline({defaults: {ease: "sine.out", duration: 0.7}})
-                tl.set(".mockup", {y: "110vh"});
+                tl.set(".mockup", {y: "110vh", autoAlpha: 0});
                 tl.set(".title", {autoAlpha: 0}, "<")
                 tl.to(".title", {autoAlpha: 1},">+0.5")
-                tl.to(".mockup", {y: "0vh", duration: 2}, ">");
+                tl.to(".mockup", {y: "0vh", autoAlpha: 1, duration: 2}, ">");
             },
             "(max-width: 1023px)": () => {
                 let tl = gsap.timeline({defaults: {ease: "sine.out", duration: 0.7}})
-                tl.set(".mockup", {yPercent: -200});
+                tl.set(".mockup", {yPercent: -200, autoAlpha: 0});
                 tl.set(".title", {autoAlpha: 0}, "<")
                 tl.to(".title", {autoAlpha: 1},">+0.5")
-                tl.to(".mockup", {yPercent: 0, duration: 2}, ">");
+                tl.to(".mockup", {yPercent: 0, autoAlpha: 1, duration: 2}, ">");
             },
         });
 
@@ -53,7 +50,7 @@ export const Project = () => {
     return (
         <>
             <Header />
-            <main className="bg-light text-dark w-screen overflow-hidden max-w-120">
+            <main className="bg-light text-dark w-screen overflow-hidden max-w-120 min-h-screen">
                 <section className="mt-6 lg:mt-12 xli:mt-16 relative mx-4 sm:mx-6 md:mx-9 flex flex-wrap justify-center">
                     <h1 className="title w-full text-intermezzo547lg xs:text-7xl int:text-8xl lg:text-detailsm xl:text-detailmd text-dark text-opacity-40 xli:text-massive 2xl:text-extralg leading-none flex flex-col text-center">
                             <p className="spanners">{project.h1}</p>
@@ -64,7 +61,7 @@ export const Project = () => {
                     </div>
                 </section>
                 <section className="mt-detcont lg:mt-0 ml-4 lg:gap-x-6 xli:gap-x-8 sm:ml-6 md:ml-8 xli:ml-12 grid grid-cols-1 grid-rows-3 lg:grid-cols-2">
-                    <div className="row-span-2 col-span-1 lg:row-span-3 pr-4 sm:pr-6 md:pr-8 lg:pr-0 projcont mt-tools-contsm int:mt-tools-contmd xli:mt-tools-contlg 2xl:mt-tools-contxl max:mt-tools-contmd w-full flex flex-wrap max-w-detail-cont">
+                    <div className="row-span-2 col-span-1 lg:row-span-3 pr-4 sm:pr-6 md:pr-8 lg:pr-0 projcont mt-tools-contsm int:mt-tools-contmd xli:mt-tools-contlg max:mt-tools-contmd w-full flex flex-wrap max-w-detail-cont">
                         <div className="mx-6 md:mx-8 xli:mx-12">
                             <div className="overflow-hidden mb-4 xli:mb-6 w-full">
                                 <h2 className="leading-tight projtit text-gold font-reg text-titlesmall md:text-detailh2md xl:text-detailsub w-full">The Briefing</h2>
@@ -104,7 +101,7 @@ export const Project = () => {
                                 </svg>
                             </a> 
                         </div>
-                        <div className="w-full py-6 flex flex-wrap justify-end">
+                        <div className="rest w-full py-6 flex flex-wrap justify-end">
                             <button onMouseEnter={spinElement} className="mx-2 w-16 xs:w-20 transition-all cursor-default">
                                 <img src={project.skill_one} alt="skill" className="w-full" />
                             </button>
@@ -122,9 +119,9 @@ export const Project = () => {
                         </section>
                     </div>
                     <div className="row-span-1 row-start-3 lg:row-span-2 lg-row-start-2 col-span-1 lg:col-start-2 lg:row-start-2 blobber flex-1 max-w-detail-blob">
-                        <div className="border-4 border-green-400 w-full relative h-full flex flex-wrap items-end lg:block">
-                            <div className="border-4 border-yellow-400 absolute top-0 left-tenner lg:left-0 z-10 h-full w-over xl:w-overlg xli:w-phonesm xli:max-w-detail-blobxl">
-                                <img src={blob} alt="blob" className="border-4 border-yellow-800 h-full w-auto xs:h-auto xs:w-overlg int:w-full max-w-none"/>
+                        <div className="w-full relative h-full flex flex-wrap items-end lg:block">
+                            <div className="absolute top-0 left-tenner lg:left-0 z-10 h-full w-over xl:w-overlg xli:w-phonesm xli:max-w-detail-blobxl">
+                                <img src={blob} alt="blob" className="h-full w-auto xs:h-auto xs:w-overlg int:w-full max-w-none"/>
                             </div>
                             <section className="w-full lg:hidden">
                                 <Link  to={"/projects"} className="relative w-full my-6 font-josefine nav-buttons text-xs flex flex-wrap flex-start">

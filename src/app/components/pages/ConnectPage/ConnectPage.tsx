@@ -38,7 +38,8 @@ export const Connect = () => {
 					<h2 className="text-gold">Life's too short to second-guess<span className="text-light"> yourself.</span></h2>
 				</div>
 				<div className="">
-					<p className="w-full pb-16 pt-6 md:pt-9 xli:pt-12 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Now, if you're interested in getting to know me, don't hesitate to say hi.</p>
+					<p className="w-full pt-6 md:pt-9 xli:pt-12 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Let's face it: you're fully invested and you'd like to get to know me better.</p>
+					<p className="w-full pb-16 pt-6 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Just fill in your details and your message is guaranteed to get to me. It'd be rude not to say hi, at the very least.</p>
 				</div>
 			</section>
 			<section className="w-full xl:w-3/5 xli:w-55 relative overflow-hidden flex flex-wrap justify-center xl:justify-end items-end xl:items-center">
@@ -69,9 +70,6 @@ export const Connect = () => {
 						<div className="w-full flex justify-end my-9">
 							<Button disabled={isSubmitting} type="submit">SEND</Button>
 						</div>
-
-						{/* <pre>{JSON.stringify(values, null, 2)}</pre>
-						<pre>{JSON.stringify(errors, null, 2)}</pre> */}
 					</Form>
 					)}
 				</Formik>

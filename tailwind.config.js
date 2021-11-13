@@ -64,10 +64,9 @@ module.exports = {
       'dev-top-sm': '0.34rem',
       'forms-top-sm': '6.125rem',
       'tools-lg': 'calc(38vw - 17rem)',
-      'tools-contlg': 'calc(100vh - 38.5rem)',
-      'tools-contxl': 'calc(100vh - 50rem)',
       'tools-contsm': '10vh',
       'tools-contmd': '20vh',
+      'tools-contlg': '40vh',
       'tools-md': 'calc(38vw - 12rem)',
       'blob-right': '15%',
       'blobbie': '20%',
@@ -91,6 +90,8 @@ module.exports = {
         'half': '-50vw',
         'detailmax': '-40rem',
         'tenner': '10%',
+        'herol': '-56.25rem',
+        'herot': '11.25rem'
     
       },
       fill: {
@@ -103,6 +104,7 @@ module.exports = {
       '200': '200',
       '150': '150',
       '300': '300',
+      '400': '400',
       },
       textColor: {
         'dark': '#1E252E',
@@ -158,6 +160,8 @@ module.exports = {
       'nearly': '90%',
       'phonesm': '80vw',
       'overlg': '140vw',
+      'proj': '40rem',
+      'double': '200vw',
     },
     height: {
       '90': '90rem',
@@ -172,7 +176,11 @@ module.exports = {
       'blobdeth': '60vh',
       'blobsm': '80vh',
       'liftsm': '20vh',
-      'over': '80vh',
+      'over': '70%',
+      'blob_hero_sm': '31.25rem',
+      'blob_hero_lg': '50vh',
+      'cookies': '12vh',
+      'cookiessm': '30vh',
     },
     maxWidth: {
       'smbutton': '6rem',
@@ -189,12 +197,17 @@ module.exports = {
       'detail-cont': '46rem',
       'detail-blob': '60rem',
       'detail-blobxl': '96rem',
+      'blobtext_int': '80vw',
+      'blobtext_lg': '37.5rem',
+      'screen': '100vw',
+      'blobtext_med': '60vw',
     },
     maxHeight: {
       'lift': '60rem',
       'liftsm': '75vw',
-      'logolg': '80vw',
-      'det': '33.75rem'
+      'logolg': '96rem',
+      'det': '33.75rem',
+      'heroimg': '112.5rem',
     },
     gridTemplateRows: {
       '8': 'repeat(8, minmax(0, 1fr))',

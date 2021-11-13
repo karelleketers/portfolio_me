@@ -1,6 +1,5 @@
 import React from 'react';
 import hero from './../../../../assets/figures/hero.svg';
-import blob from './../../../../assets/figures/blob_home_1.png';
 import video from './../../../../assets/videos/video.mp4';
 import logo from './../../../../assets/img/logo-lg.png'
 import { useScrollWindow, useTitleSlider, useTitleSection, useHeroBlob, useHeroImg, useLogo } from "./../../hooks";
@@ -11,7 +10,7 @@ export const Hero = () => {
 	useTitleSlider(".herotitle", ".spanner1", ".spanner2", ".spanner3", ".spanner4", ".spanner5");
 	useHeroImg(".hero");
 	useTitleSection(".herotitle", ".herotext", ".herocont");
-	useHeroBlob(".blobcont", ".blobtext");
+	useHeroBlob(".blobcont", ".blobtext", ".blobwrapper");
 	useLogo(".logo-lg")
 
 		return (
@@ -21,12 +20,12 @@ export const Hero = () => {
 						<source src={video} type="video/mp4"></source>
 					</video>
 					<div className="relative z-150 h-screen flex flex-wrap justify-center items-center">
-						<img src={logo} alt="large logo" className="logo-lg absolute h-4/5 max-h-logolg xl:max-h-none w-auto"/>
+						<img src={logo} alt="large logo" className="logo-lg absolute h-auto w-4/5 xl:h-4/5 max-h-logolg xl:max-h-none xl:w-auto"/>
 					</div>
 				</section>
-				<section className="herocont h-screen pt-12 relative flex flex-wrap items-center justify-end">
-					<div className="hero box-content absolute w-full right-heroright md:left-heroleft lg:top-herodown">
-						<img src={hero} alt="hero" className="h-screen lg:h-120 xli:h-160 max-w-none opacity-30"/>
+				<section className="herocont h-screen max-h-heroimg pt-12 relative flex flex-wrap items-center justify-end">
+					<div className="hero box-content absolute w-full right-heroright md:left-heroleft lg:top-herodown 2xl:left-herol 2xl:top-hero">
+						<img src={hero} alt="hero" className="h-screen lg:h-120 xli:h-160 2xl:max-h-heroimg max-w-none opacity-30"/>
 					</div>
 					<section className="px-6 md:px-9 lg:px-12">
 						<h2 className="herotitle py-8 md:py-9 xli:py-12 font-bold text-titlesmall sm:text-7xl md:text-title547 xl:text-title1024 flex flex-wrap overflow-hidden relative">
@@ -41,18 +40,21 @@ export const Hero = () => {
 							</div>
 						</h2>
 						<div className="overflow-hidden m-auto max-w-textherosm xli:max-w-textheromd mt-6 mb-9 md:mt-9 md:mb-12 xli:mt-12 xli:mb-16 ">
-							<p className="herotext font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">But there’s many things I’m not. I am not an opera singer nor am I an aeronaut, or, as you can clearly see, I am not an illustrator. But I don’t let the things that I’m not define me. They can’t stop me from doing what I want. </p>
+							<p className="herotext font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">But there’s many things I’m not. I am not an opera singer nor am I an aeronaut, and — as you can clearly see — I am not an illustrator. But I don’t let the things that I’m not define me. They can’t stop me from doing what I want. </p>
 						</div>
 						<div className="overflow-hidden m-auto max-w-textherosm xli:max-w-textheromd mb-6 md:mb-9 xli:mb-12">
 							<p className="herotext font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">And most of all, <span className="text-gold">I want to learn things</span></p>
 						</div>
 					</section>
 				</section>
-				<section className="blobcont relative">
-					<div className="box-content relative w-full h-blob_1_lg lg:h-blob_1_sm mt-4 mb-6 md:mb-9">
-						<img src={blob} alt="blob" className="absolute max-w-none w-full -top-52 lg:-top-16 left-1/5 md:left-40 lg:left-72" />
+				<section className="w-full blobwrapper h-screen max-h-logolg flex flex-wrap justify-center items-center relative my-8 lg:my-12">
+					<div className="relative w-full h-over xl:h-1/2 flex flex-wrap justify-center items-center overflow-hidden">
+						<div className="blobcont absolute w-full h-full bg-light">
+						</div>
+						<div className="mx-6 md:m-auto relative z-20 max-w-blobtext_int lg:max-w-blobtext_med xl:max-w-blobtext_lg 2xl:max-w-detail-blob">
+							<p className="blobtext font-light text-xl lg:text-blobsm 2xl:text-4xl break-words text-gold leading-normal">We are all made from star stuff,<span className="text-dark">&nbsp;but&nbsp;</span>stars come in over 200<span className="text-dark">&nbsp;billion trillion&nbsp;</span>sorts. And yet, from the day they're born till the day they perish they all<span className="text-dark">&nbsp;twinkle.&nbsp;</span></p>
+						</div>	
 					</div>
-					<p className="blobtext font-light text-small break-words w-1/2 lg:w-2/5 xl:w-1/2 absolute text-gold top-35 right-4 lg:right-9 xl:right-12 xli:left-35 2xl:left-1/4 leading-normal sm:text-blobsm lg:text-blobmed xl:text-4xl">We are made from star stuff, <span className="text-dark">but</span> blablabla slkjljsdfsdgsdgalk sfsdg<span className="text-dark">llkdgadg</span> dgsdgasdags sdgd<span className="text-dark">sgasdgsagsd</span>gsdgasdgasgsgsgagsd</p>
 				</section>
 			</section>
 		)

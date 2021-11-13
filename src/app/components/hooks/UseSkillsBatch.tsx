@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 export const useSkillsBatch = (obj: string) => {
     useEffect(() => {
         gsap.set(obj, {
-            autoAlpha: 0,
-            y: 120
+            opacity: 0,
+            yPercent: 50
         });
 
         ScrollTrigger.batch(obj, {
@@ -16,36 +16,33 @@ export const useSkillsBatch = (obj: string) => {
             end: "bottom top",
             onEnter: batch =>
                 gsap.to(batch, {
-                    autoAlpha: 1,
-                    y: 0,
-                    duration: 1,
+                    opacity: 1,
+                    yPercent: 0,
                     ease: "back.out(1.4)",
                     stagger: 0.15,
                     overwrite: true,
                 }),
             onLeave: batch =>
                 gsap.set(batch, {
-                    autoAlpha: 0,
-                    y: -120,
+                    opacity: 0,
+                    yPercent: -50,
                     overwrite: true,
                 }),
 
             onEnterBack: batch =>
                 gsap.to(batch, {
-                    autoAlpha: 1,
-                    y: 0,
-                    duration: 1,
+                    opacity: 1,
+                    yPercent: 0,
                     stagger: 0.15,
                     overwrite: true,
                     ease: "back.out(1.4)",
                 }),
             onLeaveBack: batch =>
                 gsap.set(batch, {
-                    autoAlpha: 0,
-                    y: 120,
+                    opacity: 0,
+                    yPercent: 50,
                     overwrite: true,
                 }),
-
         });
 
     })

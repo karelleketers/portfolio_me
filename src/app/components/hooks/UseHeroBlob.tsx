@@ -1,14 +1,13 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-export const useHeroBlob = (obj1: string, obj2: string) => {
+export const useHeroBlob = (obj1: string, obj2: string, trigger: string) => {
     useEffect(() => {
         gsap.set(obj1, {
-            x: "100vw",
+            x: "150vw",
         });
 
         gsap.set(obj2, {
@@ -16,10 +15,10 @@ export const useHeroBlob = (obj1: string, obj2: string) => {
         });
 
         let tl = gsap.timeline({defaults: {ease: "power2.out"}, scrollTrigger: {
-            trigger: obj1, 
-            start: "20% center",
-            end: "90% center",
-            toggleActions: "play reverse play reverse",
+            trigger: trigger, 
+            start: "start center",
+            end: "bottom center",
+            toggleActions: "restart reverse restart reverse",
         }});
 
         tl.to(obj1, {x: "0vw", duration: 1});
