@@ -2,7 +2,8 @@ import React from 'react';
 import hero from './../../../../assets/figures/hero.svg';
 import blob from './../../../../assets/figures/blob_home_1.png';
 import video from './../../../../assets/videos/video.mp4';
-import { useScrollWindow, useTitleSlider, useTitleSection, useHeroBlob, useHeroImg } from "./../../hooks";
+import logo from './../../../../assets/img/logo-lg.png'
+import { useScrollWindow, useTitleSlider, useTitleSection, useHeroBlob, useHeroImg, useLogo } from "./../../hooks";
 
 export const Hero = () => {
 
@@ -11,20 +12,24 @@ export const Hero = () => {
 	useHeroImg(".hero");
 	useTitleSection(".herotitle", ".herotext", ".herocont");
 	useHeroBlob(".blobcont", ".blobtext");
+	useLogo(".logo-lg")
 
 		return (
 			<section className="">
 				<section className="topscreen h-screen relative">
-					<video autoPlay loop muted className="absolute z-20 h-screen w-full top-1/2 left-1/2 object-cover -translate-y-2/4 -translate-x-1/2">
+					<video autoPlay loop muted className="absolute z-100 h-screen w-full top-1/2 left-1/2 object-cover -translate-y-2/4 -translate-x-1/2">
 						<source src={video} type="video/mp4"></source>
 					</video>
+					<div className="relative z-150 h-screen flex flex-wrap justify-center items-center">
+						<img src={logo} alt="large logo" className="logo-lg absolute h-4/5 max-h-logolg xl:max-h-none w-auto"/>
+					</div>
 				</section>
 				<section className="herocont h-screen pt-12 relative flex flex-wrap items-center justify-end">
 					<div className="hero box-content absolute w-full right-heroright md:left-heroleft lg:top-herodown">
 						<img src={hero} alt="hero" className="h-screen lg:h-120 xli:h-160 max-w-none opacity-30"/>
 					</div>
 					<section className="px-6 md:px-9 lg:px-12">
-						<h2 className="herotitle py-8 md:py-9 xli:py-12 font-bold text-titlesmall sm:text-xl md:text-title547 xl:text-title1024 flex flex-wrap overflow-hidden relative">
+						<h2 className="herotitle py-8 md:py-9 xli:py-12 font-bold text-titlesmall sm:text-7xl md:text-title547 xl:text-title1024 flex flex-wrap overflow-hidden relative">
 							<p className="text-gold w-full lg:w-auto leading-tight lg:leading-none">I am&nbsp;</p>
 							<div className="overflow-hidden relative leading-title pb-dev-bottom-sm sm:pb-dev-bottom-md md:pb-dev-bottom-lg xl:pb-dev-bottom-xl mt-dev-top-sm xl:mt-2">
 								<p className="opacity-0">a developer</p>
@@ -45,7 +50,7 @@ export const Hero = () => {
 				</section>
 				<section className="blobcont relative">
 					<div className="box-content relative w-full h-blob_1_lg lg:h-blob_1_sm mt-4 mb-6 md:mb-9">
-						<img src={blob} alt="blob" className="absolute max-w-none lg:w-blob_1_sm -top-52 lg:-top-16 left-1/5 md:left-40 lg:left-72" />
+						<img src={blob} alt="blob" className="absolute max-w-none w-full -top-52 lg:-top-16 left-1/5 md:left-40 lg:left-72" />
 					</div>
 					<p className="blobtext font-light text-small break-words w-1/2 lg:w-2/5 xl:w-1/2 absolute text-gold top-35 right-4 lg:right-9 xl:right-12 xli:left-35 2xl:left-1/4 leading-normal sm:text-blobsm lg:text-blobmed xl:text-4xl">We are made from star stuff, <span className="text-dark">but</span> blablabla slkjljsdfsdgsdgalk sfsdg<span className="text-dark">llkdgadg</span> dgsdgasdags sdgd<span className="text-dark">sgasdgsagsd</span>gsdgasdgasgsgsgagsd</p>
 				</section>

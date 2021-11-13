@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     screens: {
       'xs': '360px',
+      'smint': '412px',
       'sm': '420px',
       'int': '480px',
       'md': '547px',
@@ -12,8 +13,11 @@ module.exports = {
       'xl': '1024px',
       'xli': '1366px',
       '2xl': '1680px',
+      'max': '1920px',
     },
     fontSize: {
+      'pico': '0.1rem',
+      'micro': '0.2rem',
       'smallest': '.5rem',
       'xs': '0.75rem',
       'smaller': '.813rem',
@@ -26,8 +30,10 @@ module.exports = {
       'blobsm': '1.75rem',
       'blobmed': '2rem',
       '4xl': '2.25rem',
+      '6xl': '3rem',
       '7xl': '4.5rem',
       '8xl': '6rem',
+      '9xl': '8rem',
       'titlesmall': '2.85rem',
       'title547': '5.6rem',
       'title1024': '7.6rem',
@@ -38,6 +44,12 @@ module.exports = {
       'intermezzo1024lg': '5rem',
       'intermezzo1680lg': '7rem',
       'intermezzo1680sm': '2.5rem',
+      'massive': '18rem',
+      'extralg': '20rem',
+      'detailsub': '5.25rem',
+      'detailmd': '13rem',
+      'detailsm': '10rem',
+      'detailh2md': '3.8rem',
     },
     letterSpacing: {
       widest: '.3rem',
@@ -51,24 +63,46 @@ module.exports = {
       'dev-bottom-xl': '1.6rem',
       'dev-top-sm': '0.34rem',
       'forms-top-sm': '6.125rem',
+      'tools-lg': 'calc(38vw - 17rem)',
+      'tools-contlg': 'calc(100vh - 38.5rem)',
+      'tools-contxl': 'calc(100vh - 50rem)',
+      'tools-contsm': '10vh',
+      'tools-contmd': '20vh',
+      'tools-md': 'calc(38vw - 12rem)',
+      'blob-right': '15%',
+      'blobbie': '20%',
+      'detcont': '55vw',
       },
       inset: {
         '1/5': '20%',
         '35': '35%',
         '2/5': '40%',
         '3/5': '60%',
+        '4/5': '80%',
         'placeholder': '0.4rem',
         'up': '-9.375rem',
         'down': '9.375rem',
         'heroright': '60vh',
         'heroleft': '-50vh',
         'herodown': '10vh',
+        'detailnav': '1.5rem',
+        'offset': '-33.33333334vw',
+        'full': '-100vw',
+        'half': '-50vw',
+        'detailmax': '-40rem',
+        'tenner': '10%',
+    
       },
       fill: {
-        'light': '#E4E4E4'
+        'light': '#E4E4E4',
+        'dark': '#1E252E',
       },
       zIndex: {
       '-10': '-10',
+      '100': '100',
+      '200': '200',
+      '150': '150',
+      '300': '300',
       },
       textColor: {
         'dark': '#1E252E',
@@ -93,7 +127,7 @@ module.exports = {
         'josefine': ['josefine', 'sans-serif'],
         'josethin': ['josethin'],
         'mendlight': ['mendlight', 'josefine'],
-        'mendbol': ['mendbol'],
+        'mendbold': ['mendbold'],
         'mendreg': ['mendreg, josefin'],
     },
     width: {
@@ -109,13 +143,21 @@ module.exports = {
       '12/25': '48%',
       '55': '55%',
       '3/5': '60%',
+      '70': '70%',
       '85': '87%',
-      'over': '110vw',
-      'detailhor': 'calc(500%/3)',
+      'over': '160vw',
+      'detailhor': '166.6666667vw',
       'complete': '100vw',
-      'detw': 'calc(100vw/3)',
-      '80': '80vw',
-      'ten': '10vw',
+      'detw': '33.33333334vw',
+      'wider': '233.33333334vw',
+      'mobile': '500vw',
+      'half': '50vw',
+      'tablet': '300vw',
+      'phones': '40vw',
+      'blobw': '60vw',
+      'nearly': '90%',
+      'phonesm': '80vw',
+      'overlg': '140vw',
     },
     height: {
       '90': '90rem',
@@ -127,9 +169,15 @@ module.exports = {
       'bcard_lg': '40rem',
       'bcard_xl': '50rem',
       'bcard_2xl': '60rem',
+      'blobdeth': '60vh',
+      'blobsm': '80vh',
+      'liftsm': '20vh',
+      'over': '80vh',
     },
     maxWidth: {
+      'smbutton': '6rem',
       'button': '10.8rem',
+      'solobttn': '12rem',
       'button-cont': '32rem',
       'socials': '37.5rem',
       '120': '120rem',
@@ -137,6 +185,16 @@ module.exports = {
       'textheromd': '56.25rem',
       'textendxl': '63.5rem',
       'formsxl': '40vw',
+      'detail': '40rem',
+      'detail-cont': '46rem',
+      'detail-blob': '60rem',
+      'detail-blobxl': '96rem',
+    },
+    maxHeight: {
+      'lift': '60rem',
+      'liftsm': '75vw',
+      'logolg': '80vw',
+      'det': '33.75rem'
     },
     gridTemplateRows: {
       '8': 'repeat(8, minmax(0, 1fr))',
@@ -144,9 +202,12 @@ module.exports = {
     },
     lineHeight: {
       'title': '0.85',
+      'snuggish': '1.1',
+      'vloose': '3',
     },
     translate: {
       'half': '-50%',
+      'det': '-33.33333334vw',
     },
     backgroundImage: {
       'connect': "url('./assets/img/connect.png')",
@@ -155,13 +216,37 @@ module.exports = {
       '2': "url('./assets/img/codegram.jpg')",
       '3': "url('./assets/img/osoc.png')",
       '4': "url('./assets/img/aq.png')",
-
-    }
+    },
+    backgroundPosition: {
+      'left-4': '-16rem center',
+      'lefter': '-40rem center',
+    },
+    rotate: {
+      'full': '360deg'
+    },
+    transitionDuration: {
+      'slow': '2000ms'
+    },
+    animation: {
+      'spin-once': 'spinner 2s ease-in-out normal forwards',
+      'fade-in': 'fader 0.8s cubic-bezier(0.4, 0, 0.6, 1) normal',
+    },
+    keyframes: {
+       spinner: {
+        'from': {transform: 'rotate(0deg)'},
+        'to': {transform: 'rotate(180deg)' }
+       },
+       fader: {
+        '0%, 100%': { opacity: 1 },
+        '50%': { opacity: 0.4 },
+       }
+    },
   }},
   variants: {
     fill: ['hover'],
     extend: {
       appearance: ['focus'],
+      backgroundPosition: ['hover', 'focus'],
     },
   },
   plugins: [],

@@ -1,0 +1,67 @@
+{
+    "online-warriors": {
+        "h1": "Online",
+        "h1_sub": "Warriors",
+        "phones": "./../assets/img/ow-phone.png",
+        "text_upper": "Entrepreneurship has always been a commo     dream among Walloon people. To help themtake the plunge,a series of financial assistance, subsidies and facilities are offered by the publicauthorities but,paradoxically, it used to be very complicated accessing the right information and finding your way around the different entities that could provide such help… ",
+        "text_lower": " Not anymore! We have supported Sowalfin in the development of a platform allowing everyone to find useful information according to their needs but also according to their profile. The result? A complete identity inspired by the space odyssey, and a website as the regional gateway to front-line information for Walloon entrepreneurs. Try the dynamic guide and find the information you need right away.",
+        "website_link": "google.com",
+        "git_repo": "google.com",
+        "date": "April 2021",
+        "skill_one": "./../assets/img/11ty.png",
+        "skill_two": "./../assets/img/sass.png",
+        "skill_three": "./../assets/img/javascript.png"
+    },
+    "gentse-feesten": {
+        "h1": "Gentse",
+        "h1_sub": "Feesten",
+        "phones": "./../assets/img/gf-phone.png",
+        "text_upper": "Entrepreneurship has always been a commo     dream among Walloon people. To help themtake the plunge,a series of financial assistance, subsidies and facilities are offered by the publicauthorities but,paradoxically, it used to be very complicated accessing the right information and finding your way around the different entities that could provide such help… ",
+        "text_lower": " Not anymore! We have supported Sowalfin in the development of a platform allowing everyone to find useful information according to their needs but also according to their profile. The result? A complete identity inspired by the space odyssey, and a website as the regional gateway to front-line information for Walloon entrepreneurs. Try the dynamic guide and find the information you need right away.",
+        "website_link": "https://github.com/karelleketers",
+        "git_repo": "https://github.com/karelleketers",
+        "date": "November 2020",
+        "skill_one": "./../assets/img/html.png",
+        "skill_two": "./../assets/img/javascript.png",
+        "skill_three": "./../assets/img/css.png"
+    },
+    "codegram": {
+        "h1": "CodeGram",
+        "h1_sub": "",
+        "phones": "./../assets/img/cg-phone.png",
+        "text_upper": "Entrepreneurship has always been a commo     dream among Walloon people. To help themtake the plunge,a series of financial assistance, subsidies and facilities are offered by the publicauthorities but,paradoxically, it used to be very complicated accessing the right information and finding your way around the different entities that could provide such help… ",
+        "text_lower": " Not anymore! We have supported Sowalfin in the development of a platform allowing everyone to find useful information according to their needs but also according to their profile. The result? A complete identity inspired by the space odyssey, and a website as the regional gateway to front-line information for Walloon entrepreneurs. Try the dynamic guide and find the information you need right away.",
+        "website_link": "google.com",
+        "git_repo": "google.com",
+        "date": "June 2021",
+        "skill_one": "./../assets/img/sqlite3.png",
+        "skill_two": "./../assets/img/swagger.png",
+        "skill_three": "./../assets/img/javascript.png"
+    },
+    "osoc": {
+        "h1": "Osoc",
+        "h1_sub": "",
+        "phones": "./../assets/img/osoc-phone.png",
+        "text_upper": "Entrepreneurship has always been a commo     dream among Walloon people. To help themtake the plunge,a series of financial assistance, subsidies and facilities are offered by the publicauthorities but,paradoxically, it used to be very complicated accessing the right information and finding your way around the different entities that could provide such help… ",
+        "text_lower": " Not anymore! We have supported Sowalfin in the development of a platform allowing everyone to find useful information according to their needs but also according to their profile. The result? A complete identity inspired by the space odyssey, and a website as the regional gateway to front-line information for Walloon entrepreneurs. Try the dynamic guide and find the information you need right away.",
+        "website_link": "google.com",
+        "git_repo": "google.com",
+        "date": "July 2021",
+        "skill_one": "./../assets/img/tailwind.png",
+        "skill_two": "./../assets/img/typescript.png",
+        "skill_three": "./../assets/img/mapbox.png"
+    },
+    "arne-quinze": {
+        "h1": "Arne",
+        "h1_sub": "Quinze",
+        "phones": "./../assets/img/aq-phone.png",
+        "text_upper": "Entrepreneurship has always been a commo     dream among Walloon people. To help themtake the plunge,a series of financial assistance, subsidies and facilities are offered by the publicauthorities but,paradoxically, it used to be very complicated accessing the right information and finding your way around the different entities that could provide such help… ",
+        "text_lower": " Not anymore! We have supported Sowalfin in the development of a platform allowing everyone to find useful information according to their needs but also according to their profile. The result? A complete identity inspired by the space odyssey, and a website as the regional gateway to front-line information for Walloon entrepreneurs. Try the dynamic guide and find the information you need right away.",
+        "website_link": "google.com",
+        "git_repo": "google.com",
+        "date": "December 2020",
+        "skill_one": "./../assets/img/html.png",
+        "skill_two": "./../assets/img/css.png",
+        "skill_three": "./../assets/img/javascript.png"
+    }
+}

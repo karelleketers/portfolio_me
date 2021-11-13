@@ -1,7 +1,19 @@
-import skill from './../../../../assets/figures/skill.png';
 import blob from './../../../../assets/figures/blob_home_2.png';
 import bcard from './../../../../assets/img/businesscard.png';
-import { useSkillsBatch, useSkillsTitle, useSkillBlob, useCounter } from "./../../hooks"
+import { useSkillsBatch, useSkillsTitle, useSkillBlob, useCounter } from "./../../hooks";
+import blender from './../../../../assets/figures/blender.png';
+import express from './../../../../assets/figures/express.png';
+import graphql from './../../../../assets/figures/graphql.png';
+import gsap from './../../../../assets/figures/gsap.png';
+import javascript from './../../../../assets/figures/javascript.png';
+import nestjs from './../../../../assets/figures/nestjs.png';
+import php from './../../../../assets/figures/php.png';
+import postgresql from './../../../../assets/figures/postgresql.png';
+import react from './../../../../assets/figures/react.png';
+import sass from './../../../../assets/figures/sass.png';
+import tailwind from './../../../../assets/figures/tailwind.png';
+import typescript from './../../../../assets/figures/typescript.png';
+
 
 export const Skills = () => {
 
@@ -13,7 +25,7 @@ export const Skills = () => {
 	return (
 	<section className="">
 		<section className="skillscont px-6 md:px-9 lg:px-12 flex flex-wrap items-center max-w-textherosm xli:max-w-textheromd m-auto">
-			<h2 className="m-auto py-8 md:py-9 xli:py-12 leading-tight text-titlesmall sm:text-xl md:text-title547 xl:text-title1024 flex flex-col font-bold">
+			<h2 className="m-auto py-8 md:py-9 xli:py-12 leading-tight text-titlesmall sm:text-7xl md:text-title547 xl:text-title1024 flex flex-col font-bold">
 				<div className="overflow-hidden">
 					<p className="skillspart text-gold">What</p>
 				</div>
@@ -28,52 +40,40 @@ export const Skills = () => {
 		</section>
 		<section className="text-gold p-9 grid grid-cols-1 grid-rows-12 gap-y-5 xs:grid-cols-2 xs:grid-rows-8 md:py-12 md:gap-y-6 lg:grid-cols-3 lg:grid-rows-4 lg:py-7 lg:gap-y-10 2xl:grid-cols-10 2xl:grid-rows-3">
 			<div className="skills 2xl:col-span-4">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">JavaScript</p> */}
+				<img src={react} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-span-2">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">GraphQL</p> */}
+				<img src={postgresql} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills xs:col-span-2 lg:col-span-1 2xl:col-span-4">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">React</p> */}
+				<img src={nestjs} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-start-1 2xl:col-end-3">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">MySQL</p> */}
+				<img src={blender} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-start-3 2xl:col-end-5">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Blender</p> */}
+				<img src={php} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills xs:col-span-2 lg:col-span-1 2xl:col-start-5 2xl:col-end-7" >
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">TypeScript</p> */}
+				<img src={express} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-span-2 2xl:col-start-7 2xl:col-end-9">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Sass</p> */}
+				<img src={tailwind} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-span-2 2xl:col-start-9">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Express JS</p> */}
+				<img src={graphql} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills xs:col-span-2 lg:col-span-1 2xl:col-span-2 2xl:col-start-2">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Adobe</p> */}
+				<img src={typescript} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills 2xl:col-span-2 2xl:col-start-4">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">PHP</p> */}
+				<img src={sass} alt="skill" className="m-auto" />
 			</div>		
 			<div className="skills 2xl:col-span-2 2xl:col-start-6">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Nest JS</p> */}
+				<img src={gsap} alt="skill" className="m-auto" />
 			</div>
 			<div className="skills xs:col-span-2 lg:col-span-1 2xl:col-span-2 2xl:col-start-8">
-				<img src={skill} alt="skill" className="m-auto" />
-				{/* <p className="text-center mt-4 xs:text-base sm:text-intermezzolg">Tailwind CSS</p> */}
+				<img src={javascript} alt="skill" className="m-auto" />
 			</div>
 		</section>
 		<section className="overflow-hidden my-6 md:my-9 xli:my-12 h-full relative">

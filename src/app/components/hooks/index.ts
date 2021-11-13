@@ -8,3 +8,4 @@ export { useTitleSlider} from "./UseTitleSlider";
 export { useTitleSection } from "./UseTitleSection";
 export { useHeroBlob } from "./UseHeroBlob";
 export { useHeroImg} from "./UseHeroImg";
+export { useLogo } from "./UseLogo";

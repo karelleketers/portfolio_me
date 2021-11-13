@@ -5,7 +5,7 @@
 @import url('./assets/fonts/stylesheet.css');
 
 body {
-    background: #E4E4E4;
+    background: #1E252E;
 }
 
 input:-webkit-autofill,
@@ -28,10 +28,24 @@ input:-webkit-autofill::first-line {
     font-family: "mendreg";
 }
 
-.active {
-    border: 3rem solid slateblue
+@layer utilities {
+    @variants responsive {
+        .text-shadow {
+          text-shadow: 1.5px 1.5px 1.5px #1E252E;
+        }
+        .text-shadow-md {
+          text-shadow: 4px 4px 8px #1E252E;
+        }
+        .text-shadow-lg {
+          text-shadow: 15px 15px 30px #1E252E;
+        }
+        .text-shadow-none {
+          text-shadow: none;
+        }
+    } 
 }
 
-.inactive {
-    border: 3rem solid orange
+.lift {
+    will-change: transform;
+    will-change: opacity;
 }

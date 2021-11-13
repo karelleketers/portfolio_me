@@ -9,7 +9,7 @@ export const CTA = () => {
 	return (<section className="m-auto flex flex-wrap xl:justify-between xl:items-center h-full xl:max-w-textendxl">
 		<section className="w-full xl:w-85 xl:mb-12">
 			<section className="px-6 md:px-9 lg:px-12 xli:px-0 flex flex-wrap items-center xli:max-w-textheromd">
-				<h2 className="m-auto py-6 md:py-9 xli:py-12  leading-tight text-titlesmall sm:text-xl md:text-title547 xl:text-title1024 flex flex-col font-bold">
+				<h2 className="m-auto py-6 md:py-9 xli:py-12  leading-tight text-titlesmall sm:text-7xl md:text-title547 xl:text-title1024 flex flex-col font-bold">
 					<div className="topcont overflow-hidden pb-2"><p className="ctaspantop text-gold">This is not the end,</p></div>
 					<div className="bottomcont overflow-hidden pb-5"><p className="ctaspanbottom text-gold">it's only the <span className="text-light">beginning</span></p></div>
 				</h2>

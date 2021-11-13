@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { TextField, TextFieldError, Button} from './../../forms'
 import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';
 import emailjs from "emailjs-com";
 import { TextArea } from '../../forms';
+import { Header } from '../../layout';
+import gsap from 'gsap';
 
 const validationSchema = yup.object({
 	name: yup.string().required().min(2),
@@ -21,11 +23,18 @@ export const Connect = () => {
       });
   };
 
+  useEffect(() => { //fixes it scrolling to the end
+	let tl = gsap.timeline();
+	tl.fromTo("body", {position: "fixed"}, {position: "relative"});
+  }, [])
+
 	return (
+		<>
+		<Header />
 		<main className="min-h-screen bg-connect relative flex flex-wrap">
 			<div className="w-full h-full absolute bg-dark opacity-60 left-0 top-0 z-0"></div>
 			<section className="w-full xl:flex-1 z-10 px-6 md:px-9 lg:px-12 relative pt-nav m-auto">
-				<div className="m-auto py-6 md:py-9 xli:py-12 leading-tight text-titlesmall sm:text-xl md:text-title547 xl:text-7xl xli:text-title1024 xli:leading-none flex flex-col font-bold">
+				<div className="m-auto py-6 md:py-9 xli:py-12 leading-tight text-titlesmall sm:text-7xl md:text-title547 xl:text-7xl xli:text-title1024 xli:leading-none flex flex-col font-bold">
 					<h2 className="text-gold">Life's too short to second-guess<span className="text-light"> yourself.</span></h2>
 				</div>
 				<div className="">
@@ -69,6 +78,7 @@ export const Connect = () => {
 				<div className="w-90 h-90 absolute opacity-90 bg-light rounded-full top-0 left-1/2 translate-x-half xl:left-0 xl:translate-x-0 xl:translate-y-half xl:top-1/2 z-10"></div>
 			</section>
 		</main>
+		</>
 	)
 
 }	
