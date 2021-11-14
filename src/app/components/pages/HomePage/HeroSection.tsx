@@ -52,7 +52,7 @@ export const Hero = () => {
 						<div className="blobcont absolute w-full h-full bg-light">
 						</div>
 						<div className="mx-6 md:m-auto relative z-20 max-w-blobtext_int lg:max-w-blobtext_med xl:max-w-blobtext_lg 2xl:max-w-detail-blob">
-							<p className="blobtext font-light text-xl lg:text-blobsm 2xl:text-4xl break-words text-gold leading-normal">We are all made from star stuff,<span className="text-dark">&nbsp;but&nbsp;</span>stars come in over 200<span className="text-dark">&nbsp;billion trillion&nbsp;</span>sorts. And yet, from the day they're born till the day they perish they all<span className="text-dark">&nbsp;twinkle.&nbsp;</span></p>
+							<p className="blobtext font-light text-xl lg:text-blobsm 2xl:text-4xl break-words text-gold leading-normal">We are all made from star stuff,<span className="text-dark">&nbsp;but&nbsp;</span>stars come in over 200<span className="text-dark">&nbsp;billion trillion&nbsp;</span>sorts. And yet, from the day they're born till the day they perish, they all<span className="text-dark">&nbsp;twinkle.&nbsp;</span></p>
 						</div>	
 					</div>
 				</section>

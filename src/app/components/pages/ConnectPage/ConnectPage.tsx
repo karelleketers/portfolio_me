@@ -39,7 +39,7 @@ export const Connect = () => {
 				</div>
 				<div className="">
 					<p className="w-full pt-6 md:pt-9 xli:pt-12 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Let's face it: you're fully invested and you'd like to get to know me better.</p>
-					<p className="w-full pb-16 pt-6 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Just fill in your details and your message is guaranteed to get to me. It'd be rude not to say hi, at the very least.</p>
+					<p className="w-full pb-16 pt-6 font-mendlight sm:text-xl leading-normal md:text-small lg:text-2xl">Just fill in your details and your message is guaranteed to get to me. It would be rude not to say hi, at the very least.</p>
 				</div>
 			</section>
 			<section className="w-full xl:w-3/5 xli:w-55 relative overflow-hidden flex flex-wrap justify-center xl:justify-end items-end xl:items-center">

@@ -131,7 +131,7 @@ export const Projects = () => {
 						tl.kill();
 					}
 				},
-				"(min-width: 412px) and (max-width: 767px)": () => {
+				"(min-width: 547px) and (max-width: 767px)": () => {
 					let id = toggleIndex + 1;
 
 					let tl = gsap.timeline({defaults: {overwrite: "auto"}});
@@ -155,7 +155,7 @@ export const Projects = () => {
 						tl.kill();
 					}
 				},
-				"(max-width: 411px)": () => {
+				"(max-width: 546px)": () => {
 					let id = toggleIndex + 1;
 
 					let tl = gsap.timeline({defaults: {overwrite: "auto"}});
