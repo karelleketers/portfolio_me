@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'josefin';
+    src: url('./JosefinSans-Regular.woff2') format('woff2'),
+         url('./JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'josefinbold';
+    src: url('./josefinsans-bold-webfont.woff2') format('woff2'),
+         url('./josefinsans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'josefine';
+    src: url('./josefinsans-light-webfont.woff2') format('woff2'),
+         url('./josefinsans-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'josethin';
+    src: url('./josefinsans-thin-webfont.woff2') format('woff2'),
+         url('./josefinsans-thin-webfont.woff2') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'prep';
+    src: url('./prep-reg.woff2') format('woff2'),
+         url('./prep-reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'preplight';
+    src: url('./prep-light.woff2') format('woff2'),
+         url('./prep-light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'prepthin';
+    src: url('./prep-thin.woff2') format('woff2'),
+         url('./prep-thin.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'prepbold';
+    src: url('./prep-bold.woff2') format('woff2'),
+         url('./prep-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mendbold';
+    src: url('./mend-bold.woff2') format('woff2'),
+         url('./mend-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mendlight';
+    src: url('./mend-light.woff2') format('woff2'),
+         url('./mend-light.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mendreg';
+    src: url('./mend-reg.woff2') format('woff2'),
+         url('./mend-reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('./playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('./playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'playfairbold';
+    src: url('./playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('./playfairdisplay-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

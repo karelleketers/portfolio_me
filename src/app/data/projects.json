@@ -1,0 +1,80 @@
+{
+    "online-warriors": {
+        "h1": "Online",
+        "h1_sub": "Warriors",
+        "phones": "./../assets/img/ow-phone.png",
+        "text_upper": "This was a purely front-end uni assignment. The objective was to create a digital agency and some sort of branding around this agency. It was an external collaborative project where we had to incorporate the skills we'd picked up prior. This was one of the first assginments where we had to step away from vanilla JS and CSS",
+        "text_lower": "The website is viking themed, this includes imagery, fonts, and quotes. Colour-wise we stuck with bronzish tones, in the spirit of viking plunders. The website is interactive and responsive. Feel free to explore it and check out the code.",
+        "website_link": "https://the8gency.github.io/digital-agency-the-online-warriors/",
+        "git_repo": "https://github.com/the8gency/digital-agency-the-online-warriors",
+        "date": "April 2021",
+        "skill_one": "./../assets/img/11ty.png",
+        "skill_two": "./../assets/img/sass.png",
+        "skill_three": "./../assets/img/javascript.png"
+    },
+    "gentse-feesten": {
+        "h1": "Gentse",
+        "h1_sub": "Feesten",
+        "phones": "./../assets/img/gf-phone.png",
+        "text_upper": "This was a purely front-end uni assignment. This was one of our first 'bigger' projects where we had to recreate existing websites, using only vanilla CSS and JavaScript. The model websites were built locally and the teams behind these websites were brought on as guest lecturers to help us through the process. Gentse Feesten is a festival organised by the city of Ghent, taking place in the middle of the historical city centre every summer,",
+        "text_lower": "For the website, we didn't go through a design stage, which made the task easier. But the hard bit was in trying to work out how to make the website interact and respond the way the original website does without making use of any libraries and/or frameworks. Part of the challenge was getting the slidshow to work and toggling the events between a grid and list overview. The website is interactive and responsive. Feel free to explore it and check out the code.",
+        "website_link": "https://karelleketers.github.io/atwork-1_project_2_keters_karelle/",
+        "git_repo": "https://github.com/karelleketers/atwork-1_project_2_keters_karelle",
+        "date": "November 2020",
+        "skill_one": "./../assets/img/html.png",
+        "skill_two": "./../assets/img/javascript.png",
+        "skill_three": "./../assets/img/css.png"
+    },
+    "ledger": {
+        "h1": "Ledger",
+        "h1_sub": "",
+        "phones": "./../assets/img/ledger-phone.png",
+        "text_upper": "This was our first truly full-stack uni assignment. This was the biggest project so far where we learned to build a proper back-end, using nestjs, graphql, and typeorm. On the front-end side we stuck with React and Apollo Client as well as Tailwind CSS. Everything was coded in TypeScript. The project required building an extensive back-end with different entities, integrated with authentication and authorization, using guards.",
+        "text_lower": "The app Ledger is targeted towards users who wish to save and/or budget. Its primary target is to show the user exactly how much budget they have left for expenses, helping the user make better judgement decisions based on current data. All of this in an app that's both user-friendly and sleek. I invite you to play around on the app below.",
+        "website_link": "https://ledger-frontend.onrender.com",
+        "git_repo": "https://github.com/karelleketers/ledger-nestjs-backend",
+        "date": "November 2021",
+        "skill_one": "./../assets/img/nestjs.png",
+        "skill_two": "./../assets/img/react.png",
+        "skill_three": "./../assets/img/graphql.png"
+    },
+    "codegram": {
+        "h1": "CodeGram",
+        "h1_sub": "",
+        "phones": "./../assets/img/cg-phone.png",
+        "text_upper": "This was a full-stack uni assignment. It was collaborative and one of the first assignments where we had to work a back-end into the project. We divided the assignemnt to our individual strengths with design/front-end/back-end somewhat split and worked through the project using SCRUM.",
+        "text_lower": "It was definitely an assignment of many firsts. The first time working with SQLite, the first time documenting our CRUD through Swagger, the first time using an ORM (Sequelize), ... The website has a login/register system tied to seeded profiles (faker). It was the final project of the year, and incorporated everything we'd learned so far. As challenging as it was, we all learned a lot from it. The website is interactive and responsive. Feel free to explore it and check out the code.",
+        "website_link": "https://github.com/karelleketers/codegram",
+        "git_repo": "https://github.com/karelleketers/codegram",
+        "date": "June 2021",
+        "skill_one": "./../assets/img/sqlite3.png",
+        "skill_two": "./../assets/img/swagger.png",
+        "skill_three": "./../assets/img/javascript.png"
+    },
+    "osoc": {
+        "h1": "Osoc",
+        "h1_sub": "",
+        "phones": "./../assets/img/osoc-phone.png",
+        "text_upper": "Osoc was the first real project that I worked on. Though the project's actual name is Nature Moves. Osoc was the organisation behind the initiative. Essentially, it was a summer intership where groups of students were assigned to different projects",
+        "text_lower": "For our assignment we were asked by Natuurpunt to make them a tailored map which they could edit. The map was supposed to contain and display their nature reserves and walking trails in a way that fit their brand and theme. From the daily stand-ups/stand-downs, morning shows, designs, redesigns, coding, pitches and eventual delivery, it was an asbolute pleasure to be part of this programme. Take a look at what our team produced.",
+        "website_link": "https://osoc21.github.io/Nature-moves/",
+        "git_repo": "https://github.com/osoc21/Nature-moves",
+        "date": "July 2021",
+        "skill_one": "./../assets/img/tailwind.png",
+        "skill_two": "./../assets/img/typescript.png",
+        "skill_three": "./../assets/img/mapbox.png"
+    },
+    "arne-quinze": {
+        "h1": "Arne",
+        "h1_sub": "Quinze",
+        "phones": "./../assets/img/aq-phone.png",
+        "text_upper": "This was a purely front-end uni assignment. This was one of our first 'bigger' projects where we had to recreate existing websites, using only vanilla CSS and JavaScript. The model websites were built locally and the teams behind these websites were brought on as guest lecturers to help us through the process. Arne Quinze is a local artist and had asked this team to create his portfolio.",
+        "text_lower": "For the website, we didn't go through a design stage, which made the task easier. But the hard bit was in trying to work out how to make the website interact and respond the way the original website does without making use of any libraries and/or frameworks. What made this website so challenging was the seemingly random placement of components and the horizontal overview of the artworks. Feel free to explore it and check out the code.",
+        "website_link": "https://karelleketers.github.io/ArneQuinze/",
+        "git_repo": "https://github.com/karelleketers/ArneQuinze/tree/main",
+        "date": "December 2020",
+        "skill_one": "./../assets/img/html.png",
+        "skill_two": "./../assets/img/css.png",
+        "skill_three": "./../assets/img/javascript.png"
+    }
+}

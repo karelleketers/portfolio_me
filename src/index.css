@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./app/assets/fonts/stylesheet.css');
+
+body {
+    background: #1E252E;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid #1E252E;
+  -webkit-box-shadow: 0 0 0 30px #E4E4E4 inset;
+  -webkit-text-fill-color: #1E252E;
+  -webkit-text-font: "mendreg"
+}
+
+input:-webkit-autofill::first-line {
+    font-family: "mendreg";
+}
+
+@layer utilities {
+    @variants responsive {
+        .text-shadow {
+          text-shadow: 1.5px 1.5px 1.5px #1E252E;
+        }
+        .text-shadow-md {
+          text-shadow: 4px 4px 8px #1E252E;
+        }
+        .text-shadow-lg {
+          text-shadow: 15px 15px 30px #1E252E;
+        }
+        .text-shadow-none {
+          text-shadow: none;
+        }
+    } 
+}
+
+.lift {
+    will-change: transform;
+    will-change: opacity;
+}
